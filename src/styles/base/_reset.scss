@@ -1,0 +1,57 @@
+@import "../abstract/colors";
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.light {
+  .text {
+    color: $dark-900;
+  }
+
+  .background {
+    background-color: $dark-000;
+  }
+
+  .button {
+    border: none;
+    display: block !important;
+    color: $white;
+    background-color: $dark-200;
+    padding: 1em 2em;
+    border-radius: 0.5em;
+  }
+  .button:hover {
+    cursor: pointer;
+  }
+}
+
+.dark {
+  .text {
+    color: $white;
+  }
+
+  .background {
+    background-color: $dark-700;
+  }
+
+  .button {
+    border: none;
+    display: block !important;
+    color: $dark-900;
+    background-color: $dark-200;
+    padding: 1em 2em;
+    border-radius: 0.5em;
+  }
+  .button:hover {
+    cursor: pointer;
+  }
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
